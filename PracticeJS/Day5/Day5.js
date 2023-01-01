@@ -1,4 +1,4 @@
-let userName = 'Valery';
+let userName = 'Valera';
 let userAge = 31;
 let userHeight;
 console.log(userHeight);
