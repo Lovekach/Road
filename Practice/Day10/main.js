@@ -40,3 +40,27 @@ age == 20 ? 'Мальчику 20 лет' :
 'Мне не 18, 19, 20 лет';
 console.log(findAge);
 
+
+
+let promt = number;
+
+if (number > 0) {
+    console.log(1);
+} else if (number < 0) {
+    console.log(-1);
+} else {
+    console.log(0);
+}
+
+
+let result = a + b < 4 ? 'Malo' : 'Mnogo';
+
+
+let message = (login == 'Sootrundik') ? 'Privet' :
+(login == 'Director') ? 'Zdarova' :
+(login == '') ? 'Net logina' :
+'';
+
+
+
+
