@@ -31,3 +31,12 @@ let count1 = 23;
 let accessAllowed1 = count1 > 23 ? true : false;
 
 console.log(accessAllowed1);
+
+let ageBoy = 18;
+
+let findAge = ageBoy == 18 ? 'Мальчику 18 лет' :
+age == 19 ? 'Мальчику 19 лет' : 
+age == 20 ? 'Мальчику 20 лет' : 
+'Мне не 18, 19, 20 лет';
+console.log(findAge);
+
