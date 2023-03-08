@@ -22,3 +22,34 @@ tr:nth-child(2n) {
     color: black;
     opacity: 0.4;
 }
+
+p{
+    font-size: 40px;
+}
+
+p::before {
+    content: open-quote;
+    color:green;
+    font-size: 40px;
+}
+p::after {
+    content: close-quote;
+    color:green;
+    font-size: 40px;
+}
+
+h1::first-letter {
+    font-size: 330%;
+}
+
+h1::first-line {
+    background-color: aqua;
+}
+
+article > p {
+    color: blueviolet;
+}
+
+h2 ~ p {
+    color: bisque;
+}
