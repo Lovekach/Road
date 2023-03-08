@@ -1,0 +1,27 @@
+.we-are-same {
+    color: red;
+}
+
+#unique {
+    color: gray;
+}
+
+
+  p {
+    color: green;
+  }
+  .paragraph {
+    color: orange;
+  }
+  p.paragraph {
+    color: blue;
+  }
+
+  .wish {
+    color: royalblue;
+    font-size: 25px;
+  }
+  ul.modern {
+    font-size: 19px;
+    color: rgb(15, 169, 169);
+  }
