@@ -1,0 +1,24 @@
+[href*="youtube.com"] {
+    color: green;
+  }
+
+button:hover {
+    color: #1b877e;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.7);
+}
+table, th, tr , td {
+    table-layout: fixed;
+   border: 2px solid black;
+   border-collapse: collapse;
+   width: 50%;
+}
+
+tr:nth-child(2n) {
+    background: rgb(195, 170, 97);
+}
+
+.opa {
+    color: black;
+    opacity: 0.4;
+}
