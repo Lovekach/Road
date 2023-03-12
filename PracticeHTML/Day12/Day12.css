@@ -6,25 +6,28 @@
     font-family: 'Roboto', sans-serif;
     background: #fff;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .container {
     border: 2px solid #000;
     width: 621px;
-    height: 462px;
+    height: 449px;
     margin: 14px 9px 13px 12px;
+    
 
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #000;
-
-
-
+    border-bottom: 2px solid #000;
 }
 
+main {
+    border-right: 2px solid #000;
+    width: 50%;
+}
 
 .deg {
     font-size: 40px;
@@ -54,9 +57,9 @@ button:hover {
     color: #fff;
 }
 
-aside {}
-
-footer {}
+aside {
+    display: flex;
+}
 
 ul {
     font-size: 24px;
@@ -71,5 +74,5 @@ ul {
 
 .shape {
     border: none;
-    margin: 7px 17px 8px;
+    padding: 12px 17px 9px;
 }
