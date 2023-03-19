@@ -8,3 +8,8 @@ const c = 3;
 const d = '2a';
 console.log(c + d);
 console.log(Number(c) + Number(d));
+
+const h = 'hama';
+const n = 'mama';
+
+console.log(`${h + n}`);
