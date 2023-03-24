@@ -50,3 +50,39 @@ switch (b) {
         break;
     default: console.log('Не попали ни в 1 из кейсов')
 }
+
+//Задача 1
+
+function site(browser) {
+    if( browser === 'Edge'){
+        console.log("You've got the Edge!");
+    } else if (browser === 'Chrome') {
+        console.log('Okay we support these browser too');
+    } else if (browser === 'Firefox') {
+        console.log('Okay we support these browser too');
+    } else if (browser === 'Safari') {
+        console.log('Okay we support these browser too');
+    } else if(browser === 'Opera') {
+        console.log('Okay we support these browser too');
+    } else {
+        console.log('We hope thet this page looks ok!');
+    }
+}
+
+//Задача 2
+
+let number = +prompt('Введите число между 0 и 3', '');
+
+switch (number) {
+    case 0 :
+        console.log('Вы ввели число 0');
+        break;
+    case 1:
+        console.log('Вы ввещи число 1');
+        break;
+    case 2:
+    case 3:
+        console.log('Вы ввели число 2, а может и 3');
+        break;
+    default: console.log('Не введено ни одно из чисел');
+} 
