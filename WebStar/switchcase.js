@@ -48,5 +48,5 @@ switch (b) {
     case 6:
         console.log(6);
         break;
-    default: console.log('Не попали ни в одно и из чисел')
+    default: console.log('Не попали ни в 1 из кейсов')
 }
