@@ -8,7 +8,7 @@ while(i > 0) {
 }
 
 // do while
-let b = -4;
+let b = -3;
 
 do {
     console.log(b);
