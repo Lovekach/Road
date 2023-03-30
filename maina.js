@@ -96,3 +96,8 @@ do {
     console.log(i);
     i++;
 } while (i <= 19);
+
+
+for(let l = 1; l <= 4; i++) {
+    console.log(i);
+}
