@@ -39,6 +39,7 @@ const crypto = {
         'avax': 100,
         'atom': 200,
         'dot': 300,
+        'xrp': 400,
     }
 };
 for (const name in crypto.list2) {
