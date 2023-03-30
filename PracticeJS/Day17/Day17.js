@@ -5,7 +5,7 @@ const phoneBook = {
         'Sister': 567,
     },
     add(name, number) {
-       this.list[name] = number;
+        this.list[name] = number;
     },
     delete(name) {
         delete this.list[name];
@@ -14,10 +14,10 @@ const phoneBook = {
 };
 
 phoneBook.add('Brother', 789);
-console.log(phoneBook.list);
+console.log(this.list);
 
 phoneBook.delete('Sister');
-console.log(phoneBook.list);
+console.log(this.list);
 
 //Оператор in
 
@@ -29,8 +29,8 @@ const garage = {
         'honda': 2023,
     }
 };
-console.log('mazda' in garage.list1);
-console.log('audi' in garage.list1);
+console.log('mazda' in garage.list1); // true
+console.log('audi' in garage.list1); // false
 
 // Оператор for ... in
 
@@ -41,8 +41,6 @@ const crypto = {
         'dot': 300,
     }
 };
-for( const name in crypto.list2) {
-    console.log(name);
-    console.log(crypto.list2[name]);
+for (const name in crypto.list2) {
     console.log(`${name} - ${crypto.list2[name]}`);
 }
