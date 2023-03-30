@@ -49,6 +49,7 @@ const investBag = {
         'BTC': 100,
         'LTC': 200,
         'XRP': 300,
+        'MANA': 400,
     },
 };
 
