@@ -56,4 +56,4 @@ let nim = 12.36;
 console.log( nim.toFixed(1)); // '12.4'
 
 let nam = 12.34;
-console.log( nam.toFixed(5)); // '12.34000' - добавляет недостающие нули
+console.log( nam.toFixed(5)); // '12.34000'- добавляет недостающие нули
