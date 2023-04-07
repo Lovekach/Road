@@ -12,3 +12,6 @@ delete telegramContact["Other"];
 console.log(telegramContact);
 console.log(telegramContact.Mother);
 console.log(telegramContact["Father"]);
+
+
+
