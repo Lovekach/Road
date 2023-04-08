@@ -16,4 +16,4 @@ function showVerticalMessage(string) {
     }
 
 }
-showVerticalMessage('strada');
+showVerticalMessage('strada') ;
