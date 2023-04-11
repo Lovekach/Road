@@ -45,3 +45,36 @@ const crypto = {
 for (const name in crypto.list2) {
     console.log(`${name} - ${crypto.list2[name]}`);
 }
+
+
+const country = {
+    top: {
+        'Russia': 123,
+        'England': 345,
+        'Brazil': 678,
+    },
+    add(key, year) {
+       this.top[key] = year;
+    },
+    remove(key) {
+      delete  this.top[key];
+    }
+};
+
+// Оператор in
+console.log('Russia' in country.top);
+console.log('Crovatia' in country.top);
+
+// Цикл for ... in
+
+for ( const name in country.top) {
+    console.log(name);
+    console.log(country.top[name]);
+}
+
+
+country.add('Spain', 1234);
+console.log(country.top);
+
+country.remove('Brazil');
+console.log(country.top);
