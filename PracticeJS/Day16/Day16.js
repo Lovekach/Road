@@ -44,7 +44,7 @@ const phoneBook = {
     },
 
     log() {
-        console.log(this.list);
+         console.log(this.list);
     }
 };
 
