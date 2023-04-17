@@ -4,7 +4,10 @@
     font-family: Roboto;
 }
 
-
+.result_number {
+    border: none;
+    max-width: 100px;
+}
 
 button {
     width: 30px;

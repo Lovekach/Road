@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+
+</head>
+
+<body>
+    <div>
+        <button id="myButton"> Click on me </button>
+    </div>
+
+
+
+    <div>
+        <a href="http://example.com" id="myLink">Ссылка</a>
+    </div>
+
+
+
+    <div id="outerDiv">
+        <div id="innerDiv">
+            <button id="innerButton"> Нажми меня</button>
+        </div>
+    </div>
+
+
+    <div>
+        <ul id="myList">
+            <li>Первый элемент</li>
+            <li>Второй элемент</li>
+            <li>Третий элемент</li>
+        </ul>
+    </div>
+
+
+
+
+</body>
+
+
+<script>
+    // ОБРАБОТЧИК СОБЫТИЙ
+    var button = document.getElementById('myButton');
+
+    function buttonClickHandler() {
+        alert('Кнопка нажата');
+    }
+
+    button.addEventListener('click', buttonClickHandler); //
+
+    // ОБЪЕКТ СОБЫТИЙ
+    var link = document.getElementById('myLink');
+
+    function linkClickHandler(event) {
+        event.preventDefault();
+        alert('Вы нажали на ссылку' + event.target.innerText);
+    }
+
+    link.addEventListener('click', linkClickHandler); //
+
+    // ВСПЛЫТИЕ СОБЫТИЙ 
+    var outerDiv = document.getElementById('outerDiv');
+    var innerDiv = document.getElementById('innerDiv');
+    var innerButton = document.getElementById('innerButton');
+
+    function buttonClickHandler() {
+        alert('Кнопка нажата');
+    }
+
+    function divClickHandler() {
+        alert('Див нажат');
+    }
+
+    innerButton.addEventListener('click', buttonClickHandler,);
+    innerDIv.addEventListener('click', divClickHandler,);
+    outerDiv.addEventListener('click', divClickHandler,);
+
+
+    // ДЕЛЕГИРОВАНИЕ СОБЫТИЙ
+    var list = document.getElementById('myList');
+
+    function listItemHandler(event) {
+        alert('Вы выбрали элемент:' + event.target.innerText);
+    }
+
+    list.addEventListener('click', listItemHandler);
+
+</script>
+
+</html>
