@@ -104,3 +104,26 @@ console.log(cart.items[1].title); // книга
 cart['name'] = 'Aнтон';
 cart.name = 'Aнтон';
 
+
+const MIN_AGE = 18;
+
+const userData = {
+    name: 'Alex',
+    age: 30,
+    marriied: true,
+    sex: 'male',
+};
+
+// if (userData.age < MIN_AGE && userData.sex === 'male' && !userData.marriied) {
+//     console.log('нельзя');
+// } else if (userData.age > MIN_AGE) {
+//     console.log('можно');
+// }
+
+// if (userData.name !== 'John' || userData.marriied !== true) {
+//     console.log('Вам доступен контент');
+// }
+
+if (!(userData.age === MIN_AGE && userData.name === 'John')) {
+    console.log('Доступен');
+}
