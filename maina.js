@@ -127,3 +127,46 @@ const userData = {
 if (!(userData.age === MIN_AGE && userData.name === 'John')) {
     console.log('Доступен');
 }
+
+ 
+const name1 = 'Alex';
+
+switch (name1) {
+
+    case 'Alex':
+        console.log('Привет Alex');
+        break;
+    case 'Rate':
+        console.log('Привет Rate');
+        break;
+    default:
+
+        console.log('Привет');
+
+
+}
+
+
+
+
+
+name2 === 'Jonh'? console.log('true') : console.log('false');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
