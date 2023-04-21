@@ -128,7 +128,7 @@ if (!(userData.age === MIN_AGE && userData.name === 'John')) {
     console.log('Доступен');
 }
 
- 
+
 const name1 = 'Alex';
 
 switch (name1) {
@@ -150,20 +150,91 @@ switch (name1) {
 
 
 
-name2 === 'Jonh'? console.log('true') : console.log('false');
+name2 === 'Jonh' ? console.log('true') : console.log('false');
+
+
+
+
+const cicl = [1, 0, 55, 10, 531, 12, 12];
+
+for (let i = 0; i < cicl.length; i++) {
+    // if (cicl[i] === 55) {
+    //      break; // Прерывает цикл при i === 55
+    // }
+
+    if (cicl[i] === 55) {
+        continue; // Пропускает этот цикл при i === 55
+    }
+    console.log(cicl[i]);
+}
+console.log('end');
 
 
 
 
 
+const cart = [{
+
+    name3: 'Арбуз',
+    price: 100,
+    count: 1,
+}, {
+    name3: 'Хлеб',
+    price: 100,
+    count: 1,
+
+}, {
+    name3: 'Молоко',
+    price: 100,
+    count: 1,
+}];
+
+let finalPrice = 0;
+
+for (let l = 0; l < cart.length; l++) {
+    const product = cart[l];
+
+    const price = product.price * product.count;
+
+    finalPrice = finalPrice + price;
+}
+
+console.log(finalPrice);
 
 
+const name4 = 'Valery';
 
+if (name4 === 'Valery') {
+    const dept = 150;
+    for (let l = 0; l < cart.length; l++) {
+        const product = cart[l];
 
+        const price = product.price * product.count;
 
+        finalPrice = finalPrice + price;
+    }
+    finalPrice += dept;
 
+} else if (name4 === 'Vitaly') {
+    const dept = 50;
+    for (let l = 0; l < cart.length; l++) {
+        const product = cart[l];
 
+        const price = product.price * product.count;
 
+        finalPrice = finalPrice + price;
+    }
+    finalPrice += dept;
+
+} else {
+    for (let l = 0; l < cart.length; l++) {
+        const product = cart[l];
+    
+        const price = product.price * product.count;
+    
+        finalPrice = finalPrice + price;
+    }
+}
 
 
 
