@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button id="myButtonStart">Старт</button>
+        <button id="myButtonStop">Стоп</button>
+        <button id="myButtonReset">Сброс</button>
+    </div>
+
+</body>
+
+<script>
+    let timerId;
+    let second = 0;
+
+   const button1 = document.getElementById('myButtonStart');
+
+    function startSec(second) {
+        let timerId = setInterval(function () {
+            console.log(second++);
+        }, 1000);
+    }
+
+    startSec(0);
+
+    button1.addEventListener('click', startSec);
+
+
+
+
+    const button2 = document.getElementById('myButtonStop');
+
+    function stopSec() {
+        clearInterval(timerId);
+    }
+
+
+
+    button2.addEventListener('click', stopSec);
+ 
+    // function printNumbers(from, to) {
+    //     let current = from;
+    //     let timerId = setInterval(function() {
+    //         console.log(current);
+    //         if (current == to) {
+    //             clearInterval(timerId);
+    //         }
+    //         current++;
+    //     }, 1000);
+    //     }
+
+
+
+    const button3 = document.getElementById('myButtonReset');
+
+</script>
+
+</html>
+
+
+
+

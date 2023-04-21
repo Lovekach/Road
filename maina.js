@@ -1,70 +1,40 @@
-// Операторы сравнения!a
-
-// a >= b
-// a <= b
-// a != b
-// a == b // не строгое равенство
-// a === b // не строгое равенство
-
-// let result = 'saa' > 1;
-// console.log(result);
-// console.log(Boolean(result));
-
-
-// Ветвление и логические операторы
+function printNumbers(from, to) {
+    let current = from;
+    let timerId = setInterval(function() {
+        console.log(current);
+        if (current == to) {
+            clearInterval(timerId);
+        }
+        current++;
+    }, 1000);
+    }
 
 
-// let main = 'Сколько вам лет?';
-// let age = 31;
-// let age1 = 20;
-// if (age == 31) {
-//     console.log('Вам 31 год');
-// } if (age1 == 20) {
-//     console.log('Вам 20 лет');
+
+function secCount(second) {
+   let timerID =  setInterval(function() {
+        console.log(second++);
+    }, 1000);
+}
+
+secCount(0);
+
+
+
+
+
+
+// function printNumbers(from, to) {
+//     let current = from;
+
+//     setTimeout(function printNumbers() {
+//         console.log(current);
+//         if (current < to) {
+//             setTimeout(printNumbers, 1000);
+//         }
+//         current++;
+//     }, 2000);
+    
+
 // }
-
-// Блок else
-
-// let car = promt('Какая у меня машина?', 'Mazda');
-
-
-// if(car == 'BMW') {
-//     console.log('Ваша машина BMW');
-// } else if (car == 'Audi') {
-//     console.log('Ваша машина Audi');
-// } else {
-//     console.log('У вас нет машины');
-// }
-
-
-
-//Тернарынй оператор
-
-
-
-// let message = (car == 'BMW') ? 'Ваша машина BMW' : 
-// (car == 'Audi') ? 'Ваша машина Audi' :
-// '';
-
-// console.log(message);
-
-
-
-
-//Функции
-// let model = 'Tesla'
-
-// function myCar(model) {
-//     let model = 'Opel';
-//     console.log(model);
-// }
-
-// console.log(model);
-// // myCar('Bmw');
-// myCar('Audi');
-// myCar('Mazda');
-
-// Switch/case
-
- 
-
+// printNumbers(0, 5);
