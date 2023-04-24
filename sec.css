@@ -1,0 +1,17 @@
+.output {
+    display: flex;
+    padding-left: 70px;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    border: 3px black;
+}
+
+.buttons_start, 
+.buttons_stop, 
+.buttons_reset {
+    width: 60px;
+    margin-right: 10px;
+} 

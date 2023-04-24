@@ -2,6 +2,8 @@ const name = 'Alex';
 let final = 0;
 
 
+
+
 if (name === 'Alex') {
     const product = createProduct('Арбуз', 100, 1);
     const alexCart = [product];
@@ -15,13 +17,15 @@ if (name === 'Alex') {
     const product = createProduct('Хлеб', 10, 2);
     const jonhCart = [product];
 
-    console.log(jonhCart);
-
     const debt = 50;
 
-    calculateFinalPrice(jonhCart, (price) => {
-        console.log('Финальная цена:', price + debt);
-    });
+    // calculateFinalPrice(jonhCart, (price) => {
+    //     console.log('Финальная цена:', price + debt);
+    // });
+
+    final = calculateFinalPrice(jonhCart);
+
+    console.log('Финальная цена:', final + debt);
 
 
 } else {
@@ -51,38 +55,36 @@ function createProduct(name, price, count) {
     };
 }
 
-function calculateFinalPrice(cart, callback) {
-    setTimeout(() => {
-        let finalPrice = 0;
-        for (let i = 0; i < cart.length; i++) {
-            const product = cart[i];
+function calculateFinalPrice(cart) {
+    let finalPrice = 0;
 
-            finalPrice += (product.price * product.count);
+    if (!cart || cart.length === 0) {
+        return finalPrice;
+    }
 
-        }
-        callback(finalPrice);
-    }, 1000);
+    for (let i = 0; i < cart.length; i++) {
+        const product = cart[i];
 
+        finalPrice += (product.price * product.count);
+
+    }
 
     return finalPrice;
 }
-calculateFinalPrice();
 
 
-
-function add(a, b) {
-    return a + b;
+const log = (time) => {
+    return (message) => {
+        return time + ' - ' + message
+    }
 }
+const logWithTime = log('9:00');
+setTimeout(() => {
+    const message = logWithTime('ПОльзователь нажал войти');
+    console.log(message);
+}, 1000);
 
-console.log(add(5, 10));
-
-
-const add = (a, b) => {
-    console.log('tes');
-    return a + b;
-}
-
-add(1, 2);
-
-const add = (a, b) => a + b;
-console.log(add(5, 10));
+setTimeout(() => {
+    const message = logWithTime('ПОльзователь нажал выйти');
+    console.log(message);
+}, 2000);
