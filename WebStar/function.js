@@ -19,16 +19,17 @@ if (name === 'Alex') {
 
     const debt = 50;
 
-    final = calculateFinalPrice(jonhCart);
-    final += debt;
+    calculateFinalPrice(jonhCart, (price) => {
+        console.log('Финальная цена:', price + debt);
+    });
+
 
 } else {
     const product = createProduct('Молоко', 50, 1);
     const uSerCart = [product];
-    
+
     final = calculateFinalPrice(uSerCart);
 }
-console.log(final);
 
 function createProduct(name, price, count) {
     if (name === '') {
@@ -50,16 +51,38 @@ function createProduct(name, price, count) {
     };
 }
 
-function calculateFinalPrice(cart) {
-    let finalPrice = 0;
+function calculateFinalPrice(cart, callback) {
+    setTimeout(() => {
+        let finalPrice = 0;
+        for (let i = 0; i < cart.length; i++) {
+            const product = cart[i];
 
-    for (let i = 0; i < cart.length; i++) {
-        const product = cart[i];
+            finalPrice += (product.price * product.count);
 
-        finalPrice += (product.price * product.count);
+        }
+        callback(finalPrice);
+    }, 1000);
 
-    }
+
     return finalPrice;
 }
 calculateFinalPrice();
 
+
+
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(5, 10));
+
+
+const add = (a, b) => {
+    console.log('tes');
+    return a + b;
+}
+
+add(1, 2);
+
+const add = (a, b) => a + b;
+console.log(add(5, 10));
