@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ccsText</title>
+</head>
+<body>
+    <input type="checkbox" name="my_checkbox" id="">
+    <div class="test" id="test_id"></div>
+    <a class="active" href="#test22">link</a>
+</body>
+
+<script>
+
+const input = document.querySelector('[name="my_checkbox"]');
+console.log(input.getAttribute('name'));
+
+const a = document.querySelector('a');
+// a.setAttribute('href', 'http://google.com');
+// a.removeAttribute('hrf');
+// console.log(a.hasAttribute('href'));
+// a.setAttribute('my_custom_attr', 'hi');
+
+
+// a.style.color = 'red';
+// a.style.backgroundColor = 'green';
+
+// a.style.cssText = `
+// color: red;
+// background-color: black;
+// `
+
+// console.log(a.classList.contains('link'));
+// a.classList.add('link2');
+// a.classList.add('link5');
+// a.classList.remove('link');
+// console.log(a.classList.contains('link'));
+
+// console.log(a.classList);
+
+a.classList.toggle('active');
+
+
+</script>
+</html>
