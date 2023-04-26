@@ -1,47 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ccsText</title>
 </head>
+
 <body>
-    <input type="checkbox" name="my_checkbox" id="">
-    <div class="test" id="test_id"></div>
-    <a class="active" href="#test22">link</a>
+    <!-- 1) -->
+    <!-- <button id="hello" >test</button>
+    <button class="test1">test1</button>
+    <button class="test1">test1</button> -->
+
+
+
+
+    <!-- 2) -->
+    <!-- 
+    <button>
+        <span> Привет</span>
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+            </ul>
+
+            <span> text </span>
+        </div>
+
+        <p> Привет2 </p>
+    </button> -->
+
+
+
+
+    <!-- 3 -->
+    <!-- 
+    <div class="element">
+
+    </div> -->
+
+
+
+
+    <!-- 4 -->
+
+
+    <input type="checkbox" name="my_checkbox">;
+    <a href="#test" class="link"> link</a>
+
 </body>
 
 <script>
 
-const input = document.querySelector('[name="my_checkbox"]');
-console.log(input.getAttribute('name'));
-
-const a = document.querySelector('a');
-// a.setAttribute('href', 'http://google.com');
-// a.removeAttribute('hrf');
-// console.log(a.hasAttribute('href'));
-// a.setAttribute('my_custom_attr', 'hi');
+    // 1) getElementById , getElementsByClassName, getElementsByTagName, querrySelector , querrySelectorAll
 
 
-// a.style.color = 'red';
-// a.style.backgroundColor = 'green';
+    // const button = document.getElementById('hello')
+    // console.log(button);
 
-// a.style.cssText = `
-// color: red;
-// background-color: black;
-// `
+    // const button1 = document.getElementsByClassName('test1');
+    // console.log(button1);
 
-// console.log(a.classList.contains('link'));
-// a.classList.add('link2');
-// a.classList.add('link5');
-// a.classList.remove('link');
-// console.log(a.classList.contains('link'));
+    // const button2 = document.getElementsByTagName('button');
+    // console.log(button2);
 
-// console.log(a.classList);
 
-a.classList.toggle('active');
+    // const button3 = document.querySelector('#hello');
+    // console.log(button3);
 
+
+    // const button4 = document.querySelector('.test1');
+    // console.log(button4);
+
+
+    // ---------------------------------------------------------------------
+
+
+    // 2) firstElementChild,  lastElementChild, previousElementSibling
+
+    // const div = document.querySelector('div');
+
+    // for (let i = 0; i < div.children.length; i++) {
+    //     const element = div.children[i];
+    //     console.log(element);
+    // } if (element.tagName === 'SPAN') {
+    //     console.log('СПАН ЭЛЕМЕНТ');
+    // }
+
+
+    // console.log(div.firstElementChild);
+    // console.log(div.lastElementChild);
+    // console.log(div.children);
+
+    // console.log(div.parentNode);
+
+    // console.log(div.nextElementSibling);
+    // console.log(div.previousElementSibling);
+
+    // div.innerHTML = '<button>Привет мир</button>';  // ПЕРЕЗАПИСЫВАЕТ ВЕСЬ КОНТЕНТ ВКЛЮЧАЯ ТЕГИ
+
+    // console.log(div);
+
+
+    // div.textContent = 'Привет мир' // ПЕРЕПИСЫВАЕТ ПРОСТО ТЕКСТ
+
+    // console.log(div);
+
+
+
+    // -----------------------------------------------------------------
+
+
+    //3) createElement, append,  prepend, before, after , remove, 
+    //  insertAdjacentHTML (beforebegin, afterbegin, beforeend, afterend)
+
+
+    //insertAdjacentHTML :
+
+    // beforebegin = begin
+    // afterbegin = prepend
+    // beforeend = append
+    // afterend = after
+
+
+    // const div = document.querySelector('.element');
+
+    // div.remove();
+
+    // div.append('Привет 1'); // кладет контент в самый конец div
+    // div.prepend('Привет 2'); // кладет контент в самое начало
+
+    // div.before('Привет 3'); // контент после div
+    // div.after('Привет 4'); // контент перед div
+
+
+    // const button = document.createElement('button');
+    // button.innerHTML = 'Наша кнопка';
+
+    // div.before(button);
+
+
+    // const button2 = document.createElement('button');
+
+    // button2.textContent = 'Наша кнопка 2';
+
+    // div.after(button2);
+
+    // const ul = document.createElement('ul');
+
+    // ul.innerHTML = `
+    // <ul>
+    //     <li>1</li>
+    //     <li>2</li>
+    //     <li>3</li>
+    // </ul>
+    // `
+    // div.append(ul);
+
+
+    // div.insertAdjacentHTML('beforebegin', `
+    // <ul>
+    //     <li>1</li>
+    //     <li>2</li>
+    //     <li>3</li>
+    // </ul>
+    // ` );
+
+    // const ul = div.querySelector('ul');
+
+    // ul.insertAdjacentHTML('beforeend',`
+    // <li>3</li>
+    // ` );
+
+
+
+
+    //  4)  setAttribute, hasAttribute, getAttribute, removeAttribute
+    // data -* атрибуты , ccsText, className, classList(add, remove, toggle, contains)
+
+    const input = document.querySelector('[name="my_checkbox"]');
+    console.log(input.getAttribute('name')); // получаем атрибут
+
+    const a = document.querySelector('a');
+    // console.log(a.setAttribute('href', 'http://google.com')); // устанавливаем атрибут
+
+    // a.removeAttribute('href'); // удаляем атрибут
+    // console.log(a.hasAttribute('href3')); // узнаем есть ли такой атрибут у тега
+
+    // console.log(a.setAttribute('data-test_ attr', 'link')); // data- указывает на свой нестандартный атрибут
+
+
+    // console.log(input.dataset); // получаем доступ ко всем data-атрибутам в инпуте
+    // console.log(a.dataset);
+
+
+    // a.style.color = 'red'; //  меняем стили
+    // a.style.backgroundColor = 'orange'; // меняем стили
+
+
+    // a.style.cssText = `    // меняем сво-ва целой пачкой
+    // color: red;
+    // size: 10px;
+    // `;
+
+    // a.className = 'link2';  // меняет класс у тега
+
+    // a.classList.add('link2'); // добавляет класс
+    // a.classList.remove('link'); // удаляет класс
+    // a.classList.contains('link'); // есть ли у нас такой класс
+    // a.classList.toggle('link'); // если есть такой класс - то удаляет, 
+
+    // const button = document.createElement('button');
+    // button.innerHTML = 'НАша кнопка';
+
+    // button.style.color = 'red';
+    // button.style.backgroundColor = 'orange'
+    // button.style.borderRadius = '15px';
+
+    // document.body.append(button);
 
 </script>
+
 </html>
