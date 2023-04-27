@@ -48,8 +48,20 @@
     <!-- 4 -->
 
 
-    <input type="checkbox" name="my_checkbox">;
-    <a href="#test" class="link"> link</a>
+    <!-- <input type="checkbox" name="my_checkbox">;
+    <a href="#test" class="link"> link</a> -->
+
+
+
+    <!-- 5 -->
+
+    <form action="#">
+        <button type="submit"> Нажми на меня</button>
+    </form>
+
+    <input type="text" name="my_input">
+
+
 
 </body>
 
@@ -114,7 +126,7 @@
     // -----------------------------------------------------------------
 
 
-    //3) createElement, append,  prepend, before, after , remove, 
+    //3) createElement, append,  prepend, before, after , remove,
     //  insertAdjacentHTML (beforebegin, afterbegin, beforeend, afterend)
 
 
@@ -181,10 +193,10 @@
     //  4)  setAttribute, hasAttribute, getAttribute, removeAttribute
     // data -* атрибуты , ccsText, className, classList(add, remove, toggle, contains)
 
-    const input = document.querySelector('[name="my_checkbox"]');
-    console.log(input.getAttribute('name')); // получаем атрибут
+    // const input = document.querySelector('[name="my_checkbox"]');
+    // console.log(input.getAttribute('name')); // получаем атрибут
 
-    const a = document.querySelector('a');
+    // const a = document.querySelector('a');
     // console.log(a.setAttribute('href', 'http://google.com')); // устанавливаем атрибут
 
     // a.removeAttribute('href'); // удаляем атрибут
@@ -211,7 +223,7 @@
     // a.classList.add('link2'); // добавляет класс
     // a.classList.remove('link'); // удаляет класс
     // a.classList.contains('link'); // есть ли у нас такой класс
-    // a.classList.toggle('link'); // если есть такой класс - то удаляет, 
+    // a.classList.toggle('link'); // если есть такой класс - то удаляет,
 
     // const button = document.createElement('button');
     // button.innerHTML = 'НАша кнопка';
@@ -221,6 +233,88 @@
     // button.style.borderRadius = '15px';
 
     // document.body.append(button);
+
+
+    // 5) click, input, scroll, keydown, resize, mouseenter, mouseleaver, addEvenListener, removeEventListener
+
+
+    const button = document.querySelector('button');
+
+    // button.addEventListener('click', clickHandler);
+    // let i = 0;
+
+    // function clickHandler() {
+
+    //     i++;
+
+    //     console.log('clcik', i);
+
+    //     switch (i) {
+    //         case 1:
+    //             button.style.backgroundColor = 'red';
+    //             break;
+    //         case 2:
+    //             button.style.backgroundColor = 'blue';
+    //             break;
+    //         case 3:
+    //             button.style.backgroundColor = 'green';
+    //             break;
+    //         case 4:
+    //             button.style.backgroundColor = 'orange';
+    //             break;
+    //         case 5:
+    //             button.style.backgroundColor = 'pink';
+    //             button.removeEventListener('click', clickHandler);
+    //             break;
+    //     }
+
+    // }
+
+    // const input = document.querySelector('[name="my_input"]');
+
+    // input.addEventListener('input', function_name);
+
+
+    // let prevValue = input.value; // пустая строка
+
+    //     function function_name(event) {
+    //         const userData = event.targer.value;
+
+    //         if (userData.includes('(') || userData.includes(')')) {
+    //             input.value = prevValue;
+    //             return;
+    //         }
+
+    //         input.value = userData;
+    //         prevValue = userData;
+    //     }
+
+
+
+    // document.addEventListener('scroll', (event) => {
+    //     console.log(event);
+    // });
+
+
+    // document.addEventListener('keydown', (event) => {
+    //     console.log(event);
+    // });
+
+    // window.addEventListener('resize', (event) => {
+    //     console.log(event);
+    // });
+
+    // button.addEventListener('mouseenter', (event) =>{
+    //     console.log(event);
+    // });
+
+    // button.addEventListener('mouseleave', (event) =>{
+    //     console.log(event);
+    // });
+
+    button.addEventListener('submit', (event) => {
+        console.log(sub);
+    });
 
 </script>
 
