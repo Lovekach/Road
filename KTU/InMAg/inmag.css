@@ -31,6 +31,7 @@ body {
     background: transparent;
     font-family: 'Open Sans';
     color: gray;
+    cursor: pointer;
 }
 
 .card-tab::after {
