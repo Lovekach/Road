@@ -192,16 +192,31 @@ if (!news || news.length === 0) {
     const firstNews = news[0];
     const secondtNews = news[1];
 
-    for(let i = 0; i < news.length; i++) {
+    for (let i = 0; i < news.length; i++) {
         const newsItem = news[i];
 
-        for( let j = 0; j < newsItem.partners.length; j++);
-        const partnersItem = newsItem.partners[j];
+        if (newsItem.type === TYPE.CR) {
+            continue;
+        }
+
+        // for( let j = 0; j < newsItem.partners.length; j++);
+        // const partnersItem = newsItem.partners[j];
 
         console.log(newsItem.title);
-        console.log(partnersItem.sute);
+        // console.log(partnersItem.sute);
     }
-}
+    let criticalNews = false;
+
+    for (let i = 0; i < news.length; i++) {
+        if(newsItem.type === TYPE.CR) {
+            criticalNews = true;
+            break;
+        }
+
+        if (criticalNews) {
+            console.log('Danger');
+        }
+    }
 
 
 // if (firstNews.type === TYPE.CR) {
