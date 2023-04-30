@@ -191,28 +191,43 @@ if (!news || news.length === 0) {
 
     const firstNews = news[0];
     const secondtNews = news[1];
+
+    for(let i = 0; i < news.length; i++) {
+        const newsItem = news[i];
+
+        for( let j = 0; j < newsItem.partners.length; j++);
+        const partnersItem = newsItem.partners[j];
+
+        console.log(newsItem.title);
+        console.log(partnersItem.sute);
+    }
 }
 
 
-if (firstNews.type === TYPE.CR) {
-    console.error(firstNews.title);
-} else if (firstNews.type === TYPE.NE) {
-    console.warn(firstNews.title);
-}
+// if (firstNews.type === TYPE.CR) {
+//     console.error(firstNews.title);
+// } else if (firstNews.type === TYPE.NE) {
+//     console.warn(firstNews.title);
+// }
 
 
-switch (firstNews.type) {
-    case TYPE.CR:
-        console.error(firstNews.title);
-        break;
-    case TYPE.NE:
-        console.warn(firstNews.title);
-        break;
-}
+// switch (firstNews.type) {
+//     case TYPE.CR:
+//         console.error(firstNews.title);
+//         break;
+//     case TYPE.NE:
+//         console.warn(firstNews.title);
+//         break;
+// }
 
 
-let num = 7;
+// let num = 7;
 
-(num = 6) ? 'verno' : 'ne verno';
+// (num = 6) ? 'verno' : 'ne verno';
 
-console.log(num);
+// console.log(num);
+
+
+
+// цикл for
+
