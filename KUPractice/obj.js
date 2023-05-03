@@ -96,4 +96,52 @@ const userInformation = {
 }
 
 
+const listOfFamily = {
+    dad: 'Отец',
+    mom: 'Мать',
+    brother: 'Брат',
+    sister: 'Сестра',
+}
 
+
+function getInfo(info) {
+
+    let countFamily = 0;
+    for (let key in userInformation.family) {
+        countFamily++;
+    }
+
+
+    let str = `${"У"}  ${userInformation.name} ${userInformation.surname}  ${"В семье"}  ${countFamily} ${"члена"}`;
+    console.log(str);
+
+    // if (userInformation.family.dad) {
+    //     const dad = userInformation.family.dad;
+    //     str += `Отец - ${dad.name} ${dad.surname}`;
+
+    //     if (typeof dad.age === 'number') {
+    //         str += `(${dad.age} лет).`;
+    //     } else {
+    //         str += '(возраст не известен)';
+    //     }
+
+    // }
+
+    for (let familyMember in info.family) {
+        const data = info.family[familyMember];
+
+        str += ` ${listOfFamily[familyMember]}`;
+        str += ` - ${data.name} ${data.surname}`;
+
+        if (typeof data.age === 'number' || typeof data.age === 'string') {
+            str += `(${data.age} лет).`;
+        } else {
+            str += '(возраст не известен)';
+        }
+
+
+    }
+    return str;
+}
+const data = getInfo(userInformation);
+console.log(data);
