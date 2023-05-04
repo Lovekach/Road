@@ -224,7 +224,7 @@ if (!news || news.length === 0) {
         }
       
     }
-
+as
 }
 if (hasCriticalNews) {
     console.log('Danger');
