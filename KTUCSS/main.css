@@ -1,0 +1,54 @@
+.main_features {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_subtitle,
+.main_title {
+    font-family: RobotoL, sans-serif;
+    margin-bottom: 0px;
+}
+
+.main_title {
+    margin-top: 162px;
+    font-size: 52px;
+}
+
+.main_subtitle {
+    font-size: 20px;
+    margin-top: 27px;
+    width: 40%;
+    text-align: center;
+}
+
+.main_image {
+    display: flex;
+    margin-top: 80px;
+}
+
+.main_image ul{
+    padding: 0;
+    margin-top: -35px;
+    
+}
+.main_image ul li {
+    list-style-type: none;
+    margin-top: 35px;
+}
+
+.main_li_header {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: RobotoL, sans-serif;
+   
+}
+
+.main_li_footer {
+    display: inline-block;
+    margin-top: 20px;
+    width: 270px;
+    font-family: RobotoL, sans-serif;
+}
