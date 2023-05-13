@@ -12,14 +12,18 @@ body {
 
 .header_nav {
     margin-left: 120px;
-    margin-right: 149px;
+    margin-right: 185px;
     font-family: RobotoM, sans-serif;
 }
 
 .header_nav a {
     color: white;
     text-decoration: none;
-    margin-right: 31px;
+
+}
+
+.header_nav a:last-child {
+    margin-right: 0;
 }
 
 .header_nav a:hover {

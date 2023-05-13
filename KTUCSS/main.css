@@ -35,13 +35,17 @@
 
 .main_image ul {
     padding: 0;
-    margin-top: -35px;
+    margin-top: 0;
 
 }
 
 .main_image ul li {
     list-style-type: none;
     margin-top: 35px;
+}
+
+.main_image ul li:first-child {
+    margin-top: 0;
 }
 
 .main_li_header {
@@ -112,6 +116,10 @@
     margin-right: 33px;
 }
 
+.gallery_section img:last-child {
+    margin-right: 0;
+}
+
 .gallery_first_row,
 .gallery_second_row {
     display: flex;
@@ -126,16 +134,15 @@
 
 
 /* Partners */
-.main_partners {}
-
-.partners_icon img {
-    margin-left: 74px;
-}
 
 .partners_icon img {
     margin-right: 74px;
     margin-bottom: 54px;
     margin-top: 54px;
+}
+
+.partners_icon img:last-child {
+    margin-right: 0;
 }
 
 /* Testimonials */

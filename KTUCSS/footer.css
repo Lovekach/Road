@@ -10,6 +10,10 @@
     display: flex;
 }
 
+.footer_links > div:last-child {
+    margin-right: 0;
+}
+
 .links {
     display: flex;
     flex-direction: column;
