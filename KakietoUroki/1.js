@@ -10,3 +10,10 @@ function otherAngle(a, b) {
     let third = 180 - (a + b);
     return third;
   }
+
+const obj = {
+    name: 'Alex',
+    age: 30,
+};
+
+console.log(name in obj); // true
