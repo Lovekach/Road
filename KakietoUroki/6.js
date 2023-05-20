@@ -21,3 +21,31 @@ age >= 18 ? 'Ты уже совершеннолетний':
 age > 90 ? 'Ты уже слишком старый' :
 'Ты уже не желец, Вась'
 console.log(result);
+
+
+const a = 1;
+const b = 1;
+
+if (a > b) {
+    console.log('test');
+} else if (a === b) {
+    console.log('test2');
+} else if (a !== b) {
+    console.log('test3');
+} else {
+    console.log('test4');
+}
+
+
+if ( a === 0 && a === b) {
+    console.log('hello');
+}
+
+if ( a === 0 || a === b) {
+    console.log('hello');
+}
+
+
+if (!(a === 0)) { // !false = true
+    console.log('hello');
+}
