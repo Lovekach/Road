@@ -49,3 +49,29 @@ if ( a === 0 || a === b) {
 if (!(a === 0)) { // !false = true
     console.log('hello');
 }
+
+
+
+const MIN_AGE = 18;
+
+const userData = {
+    name: 'Alex',
+    age: 20,
+    married: true,
+    gender: 'male',
+};
+
+
+if (userData.age >= MIN_AGE && userData.gender === 'male' && !userData.married) {
+    console.log('Вам доступен контент');
+}
+
+
+if (userData.name === 'John' || userData.age <= MIN_AGE || userData.gender !== 'male'  ) {
+    console.log('Вам контент не доступен');
+}
+
+
+if (!(userData.age === MIN_AGE) && userData.name === 'John') {
+    console.log('Вам доступен контент');
+} 
