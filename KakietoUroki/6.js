@@ -75,3 +75,31 @@ if (userData.name === 'John' || userData.age <= MIN_AGE || userData.gender !== '
 if (!(userData.age === MIN_AGE) && userData.name === 'John') {
     console.log('Вам доступен контент');
 } 
+
+function hero(bullets, dragons){
+    if (bullets >= dragons * 2) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+
+  function chromosomeCheck(sperm) {
+    if (sperm === 'XY') {
+      return("Congratulations! You're going to have a son.")
+    } else {
+      return("Congratulations! You're going to have a daughter.")
+  
+    }
+  }
+
+
+  function checkForFactor (base, factor) {
+    return !(base % factor);
+  }
+
+
+  function opposite(number) {
+    return -number;
+  }
