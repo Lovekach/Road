@@ -6,8 +6,9 @@ const phoneBook = {
     }
     
 };
+console.log('John' in phoneBook.list );
 
-for ( key in phoneBook.list) {
+for (let key in phoneBook.list) {
     console.log(`${key} - ${phoneBook.list[key]}`);
 }
 
@@ -60,7 +61,7 @@ for ( key in phoneBook.list) {
 
 // console.log('Mama' in myPhoneBook.spisok);
 
-// for( key in myPhoneBook.spisok) {
+// for(let key in myPhoneBook.spisok) {
 //     // console.log(key);
 // }
 // console.log(`${myPhoneBook.spisok} - ${myPhoneBook.spisok[key]}`);
