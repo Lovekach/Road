@@ -1,16 +1,16 @@
-const phoneBook = {
-    list: {
-        'John': 1234,
-        'Jane Doe': 9834,
-        'Jim Smith': 111111,
-    }
-    
-};
-console.log('John' in phoneBook.list );
+// const phoneBook = {
+//     list: {
+//         'John': 1234,
+//         'Jane Doe': 9834,
+//         'Jim Smith': 111111,
+//     }
 
-for (let key in phoneBook.list) {
-    console.log(`${key} - ${phoneBook.list[key]}`);
-}
+// };
+// console.log('John' in phoneBook.list );
+
+// for (let key in phoneBook.list) {
+//     console.log(`${key} - ${phoneBook.list[key]}`);
+// }
 
 
 
@@ -91,3 +91,31 @@ for (let key in phoneBook.list) {
 
 // console.log(cart['money']['sum']); // === console.log(cart.money.sum)
 // console.log(cart.items[1].title);
+
+
+function addRecord(key, value) {
+    this.list[key] = value;
+}
+
+const phoneBook = {
+    list: {
+        'Papa': 1245,
+        'Mama': 65786,
+    },
+
+    addRecord
+};
+
+
+const toDoList = {
+    list: {
+        'make a video': 'done',
+    },
+    addRecord
+}
+
+phoneBook.addRecord('Sestra', 99988877);
+console.log(phoneBook.list);
+
+toDoList.addRecord('make a bed', 'to process');
+console.log(toDoList.list);
