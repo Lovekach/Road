@@ -52,19 +52,60 @@ const games = [
 
 
 const formattedGames = [];
+const problemGames = [];
 
 games.forEach((game) => {
 
-     const price = !game.price ? 0 : parseFloat(parseFloat(game.price));
+     const price = !game.price ? 0 : parseFloat(game.price);
+
+
+    
+
+
+     const discountData = discounts.find((discount) => {
+        const discountValue = discount[1];
+        if(discount[1] !== 'number' && discount[1].cond > price) {
+            return false;
+
+        }
+        if( discount[0] === game.discountType) {
+            return true;
+
+        }
+     });
+
+    
+
+     const discountValue = Array.isArray(discountData) ? discountData[1] : 0;
+
+     const numericDiscount = typeof discountValue === 'number' ? discountValue : discountValue.value;
+
+     console.log(game.id, numericDiscount);
+     
 
     const newGame = {
         id:game.id,
         name: game.name.trim(),
-        finalPrice: price.toFixed(2),
+        finalPrice: parseFloat(price.toFixed(2) - numericDiscount),
 
     };
 
-    formattedGames.push(newGame);
+
+    const isDuplicate = formattedGames.some((formattedGames) => {
+        if (newGame.name.toLowerCase() === formattedGames.name.toLowerCase()) {
+            return true;
+        }
+    }) 
+    if (newGame.finalPrice < 0) {
+        problemGames.push(newGame);
+    } else if (isDuplicate) {
+        problemGames.push(game);
+
+    } else {
+        formattedGames.push(newGame);
+    }
+
+    
 });
 
 console.log(formattedGames);
