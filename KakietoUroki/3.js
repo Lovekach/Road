@@ -98,10 +98,10 @@ const onlyNegative = count.filter(num => num < 0);
 console.log(onlyNegative);
 
 const diary = [
-    { name: 'Anna', age: 25},
-    { name: 'Any', age: 35},
-    { name: 'Bob', age: 15},
-] 
+    { name: 'Anna', age: 25 },
+    { name: 'Any', age: 35 },
+    { name: 'Bob', age: 15 },
+]
 
 const youngPerson = diary.filter(pers => pers.age < 18);
 console.log(youngPerson);
@@ -111,11 +111,39 @@ const numbe = [1, 11, -2, -3, 4, -10, 5, 8];
 const plusNumber = numbe.filter(numbr => numbr > 0);
 console.log(plusNumber);
 
-const person = ['cat' , 'dog', 'monkey', 'horse', 'bird'];
-const upperName = person.map( pers => pers.toUpperCase());
+const person = ['cat', 'dog', 'monkey', 'horse', 'bird'];
+const upperName = person.map(pers => pers.toUpperCase());
 console.log(upperName);
 
 
-const coun = [1, 11, 3, 5, 66, 24, -12, - 13, -10 , 4, 86, 23, 32];
-const sortedNum = coun.sort((a,b) => a -b);
+const coun = [1, 11, 3, 5, 66, 24, -12, - 13, -10, 4, 86, 23, 32];
+const sortedNum = coun.sort((a, b) => a - b);
 console.log(sortedNum);
+
+
+
+
+const array = [1, 2, true, 'always', 3, 4];
+array.forEach((element) => {
+    console.log(element);
+});
+
+
+const from = 'lesson, lessons, Для новичков, Для начинающих, Создать сайт, css, css3, Курсы по css3';
+
+const splitted = from.split(',');
+console.log(splitted);
+
+const final = [];
+
+
+splitted.forEach(elem => {
+    const letter = '#' + elem.toLocaleLowerCase();
+    const changeSymb = elem.split(' ').join('_'); 
+    console.log(changeSymb);
+
+    final.push(letter);
+});
+
+const str = final.join(' ');
+console.log(str);
