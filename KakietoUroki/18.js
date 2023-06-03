@@ -28,3 +28,5 @@ console.log(Number.parseFloat('9.9px'));
 
 const age = 33;
 console.log(age.toString());
+
+console.log(7.3e9);
