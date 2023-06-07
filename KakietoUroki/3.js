@@ -163,22 +163,22 @@
 // })
 
 
-const data = [{
-    id: 1,
-    title: 'Новость дня',
-    author: 'Alex',
-    likes: 50,
-}, {
-    id: 2,
-    title: 'Важная новость',
-    author: 'Anna',
-    likes: 150,
-}, {
-    id: 3,
-    title: 'Важная новость №2',
-    author: 'John',
-    likes: 140,
-}];
+// const data = [{
+//     id: 1,
+//     title: 'Новость дня',
+//     author: 'Alex',
+//     likes: 50,
+// }, {
+//     id: 2,
+//     title: 'Важная новость',
+//     author: 'Anna',
+//     likes: 150,
+// }, {
+//     id: 3,
+//     title: 'Важная новость №2',
+//     author: 'John',
+//     likes: 140,
+// }];
 
 // const moreLikes = data.filter((elem) => {
 //     // console.log(elem);
@@ -203,32 +203,120 @@ const data = [{
 // console.log(data1);
 
 // const data2 = moreLikes.map((elem) => {
-    
+
 //     return elem.author;
 // })
 
 // console.log(data2);
 
-const allLikes = data.map((elem) => {
-    return {
-        author: elem.author,
-        like: elem.likes,
+// const allLikes = data.map((elem) => {
+//     return {
+//         author: elem.author,
+//         like: elem.likes,
+//     }
+
+// })
+
+// console.log(allLikes);
+
+// const bestAuthor = allLikes.filter((elem) => {
+//     if (elem.like > 140) {
+//         return {
+//             author:elem.author,
+//             like: elem.like
+//         }
+//     }
+// });
+// console.log(bestAuthor);
+
+
+// const nameBestAuthor = bestAuthor.map(name => name.author);
+// console.log(nameBestAuthor);
+
+
+// const number = [1, 2, 3, 4, 5];
+// let result = 0;
+// number.forEach(number => {
+//    return result += number
+// })
+// console.log(result);
+
+
+// Task 2
+
+
+// const words = ['my', 'name', 'is', 'Alex'];
+// const str = words.join(' ');
+// console.log(str);
+
+
+// Task 3
+
+// const badAge = 20;
+
+// const ages = [15, 10, 20, 30];
+// const result = ages.includes(badAge);
+// console.log(result);
+
+
+//Task 4
+
+// const users = [{
+//     name: 'Alex',
+//     age: '20',
+// }, {
+//     name: 'Anna',
+//     age: '30',
+// }, {
+//     name: 'John',
+//     age: '10',
+// }];
+
+// const aproveAge = users.filter((elem) => {
+//     if (elem.age > 18) {
+//         return elem.name
+//     }
+// });
+
+// console.log(aproveAge);
+
+// const onlyName = aproveAge.map( elem => elem.name);
+// console.log(onlyName);
+
+
+
+function animal(obj) {
+    return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
+};
+
+
+
+function findMultiples(integer, limit) {
+    const result = [];
+
+    for (let i = 1; integer * i <= limit; i++) {
+        result.push(integer * i);
     }
-        
-})
+    return result;
+}
 
-console.log(allLikes);
 
-const bestAuthor = allLikes.filter((elem) => {
-    if (elem.like > 140) {
-        return {
-            author:elem.author,
-            like: elem.like
-        }
+
+function digitize(n) {
+  
+  
+    const result = [];
+    const str = `${n}`
+    
+    for ( i = 0; i < str.length; i++ ) {
+    
+      result.push(+str[i]);
+      
+  
+    
+    
     }
-});
-console.log(bestAuthor);
-
-
-const nameBestAuthor = bestAuthor.map(name => name.author);
-console.log(nameBestAuthor);
+     result.reverse();
+    
+    return result;
+  }
