@@ -148,10 +148,28 @@ games.forEach((game) => {
     
 });
 
+
+problemGames.forEach((game) => {
+    const problems = game.reasons.join(', ');
+    console.error(`Игра ${game.name.trim()} имеет проблему с данными: ${problems}.`)
+})
 console.log('problemGames',problemGames);
 console.log('formattedGames',formattedGames);
 
 
+const genres = formattedGames.reduce((acc, game) => {
+    game.hashTags.forEach((tag) => {
+        if (tag in acc) {
+            acc[tag].push(game.id);
+        } else {
+            acc[tag] = [game.id];
+        }
+    })
+
+    return acc;
+}, {});
+
+console.log(genres);
 
 // Итог
 // 1. Форматируем данные до нормального вида
