@@ -85,21 +85,61 @@ games.forEach((game) => {
 
     const newGame = {
         id:game.id,
+        discription: game.description,
         name: game.name.trim(),
-        finalPrice: parseFloat(price.toFixed(2) - numericDiscount),
+        finalPrice: parseFloat(price.toFixed(2)) - numericDiscount,
+   
 
     };
 
+    if(Array.isArray(game.hashTags)) {
+        newGame.hashTags = game.hashTags.flat(Infinity).reduce((acc, tags) => {
+            if (tags.length === 0) {
+                return acc;
+            }
+            const split = tags.split(',');
 
-    const isDuplicate = formattedGames.some((formattedGames) => {
-        if (newGame.name.toLowerCase() === formattedGames.name.toLowerCase()) {
-            return true;
-        }
-    }) 
+                split.forEach((value) => {
+                   acc.push(value); 
+                });
+
+            return acc;
+        }, []);
+
+    } else {
+        newGame.hashTags = [];
+
+    };
+
+    if ( 'link' in game) {
+        newGame.link = game.link;
+    }
+
+  
+
     if (newGame.finalPrice < 0) {
-        problemGames.push(newGame);
-    } else if (isDuplicate) {
-        problemGames.push(game);
+        const reasons = ['Цена уходит в минус'];
+        const gameWithReasons = {
+            ...game,
+            reasons,
+        };
+        problemGames.push(gameWithReasons);
+        return;
+    }
+
+        const isDuplicate = formattedGames.some((formattedGames) => {
+            if (newGame.name.toLowerCase() === formattedGames.name.toLowerCase()) {
+                return true;
+            }
+        });
+
+    if (isDuplicate) {
+        const reasons = ['Дубликат'];
+        const gameWithReasons = {
+            ...game,
+            reasons,
+        };
+        problemGames.push(gameWithReasons);
 
     } else {
         formattedGames.push(newGame);
@@ -108,7 +148,8 @@ games.forEach((game) => {
     
 });
 
-console.log(formattedGames);
+console.log('problemGames',problemGames);
+console.log('formattedGames',formattedGames);
 
 
 
