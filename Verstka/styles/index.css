@@ -23,4 +23,16 @@
 
     --color-pinkdark: #E84393;
     --color-pinklight: #FD79A8;
+
+    --font-family-bold: InterB, sans-serif;
+    --font-family-medium: InterM, sans-serif;
+    --font-family-regular: InterR, sans-serif;
+    --font-family-light: InterL, sans-serif;
+
+    --animation-speed: .3s;
+    --animation-func: ease;
+}
+
+body { 
+    margin: 0;
 }
