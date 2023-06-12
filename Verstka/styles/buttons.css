@@ -11,19 +11,19 @@
 .primary-button,
 .primary-button-corner {
     border: none;
-    background:var(--color-purpledark) ;
+    background: var(--color-purpledark);
     color: var(--color-white);
     transition: background var(--animation-speed) var(--animation-func);
 
 }
 
 .primary-button {
-border-radius: 16px;
+    border-radius: 16px;
 }
 
 .primary-button-corner {
     border-radius: 999px;
-   
+
 }
 
 
@@ -32,18 +32,18 @@ border-radius: 16px;
 .primary-button:focus,
 .primary-button-corner:focus {
 
-    background:var(--color-purplelight) ;
+    background: var(--color-purplelight);
 }
 
 .default-button {
     border: 1px solid var(--color-graylight-32);
     background: transparent;
-    color:var(--color-purpledark);
-    transition: color var(--animation-speed) var(--animation-func), border-color var(--animation-speed) var(--animation-func) ;
+    color: var(--color-purpledark);
+    transition: color var(--animation-speed) var(--animation-func), border-color var(--animation-speed) var(--animation-func);
 }
 
 .default-button:hover,
 .default-button:focus {
-    color:var(--color-purplelight) ;
+    color: var(--color-purplelight);
     border-color: var(--color-graysoft-24);
 }
