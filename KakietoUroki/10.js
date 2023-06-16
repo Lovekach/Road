@@ -64,13 +64,13 @@
 
 // printNumbers(0, 10);
 
-setTimeout(function go() {
-    console.log(current);
-    if (current < to) {
-        setTimeout(go, 1000)
-    }
-    current++;
+// setTimeout(function go() {
+//     console.log(current);
+//     if (current < to) {
+//         setTimeout(go, 1000)
+//     }
+//     current++;
 
-}, 1000);
+// }, 1000);
 
-printNumbers(0, 10);
+// printNumbers(0, 10);

@@ -1,0 +1,71 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 136px;
+    background: url(../images/backgrounds/Wave.svg) no-repeat bottom;
+    background-size: contain;
+}
+
+.footer-socials-container {
+    margin-top: 8px;
+}
+
+.footer-socials-container>a {
+    text-decoration: none;
+    outline: none;
+    margin-right: 37px;
+}
+
+.footer-socials-container>a:last-child {
+    margin-right: 0;
+}
+
+.footer-socials-container>a>img {
+    border-radius: 50%;
+
+}
+
+.footer-socials-container>a:focus img {
+    background: var(--color-yellowlight);
+}
+
+.footer-socials-container>a>img:hover {
+    background: var(--color-yellowlight);
+
+}
+
+.footer-socials-title,
+.footer-links-title {
+    margin: 0;
+    font-family: var(--font-family-bold);
+    font-size: 32px;
+    color: var(--color-graylight-32);
+}
+
+.footer-links-title {
+    margin-top: 40px;
+}
+
+.footer-links-container {
+    margin-top: 16px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 16px;
+    grid-auto-flow: column;
+}
+
+.footer-links-container a {
+    color: var(--color-black);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--font-family-medium);
+    border-bottom: 2px solid transparent;
+    transition:  border-color .4 ease ;
+}
+
+.footer-links-container a:hover,
+.footer-links-container a:focus {
+   border-color: var(--color-black);
+}
