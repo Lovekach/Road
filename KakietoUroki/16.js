@@ -86,5 +86,5 @@
 // console.log(body.parentNode === document.documentElement);
 
 
-const body = document.documentElement.children;
-console.log(body);
+// const body = document.documentElement.children;
+// console.log(body);
