@@ -24,4 +24,11 @@
 // }, 3000);
 
 
-console.log(document.documentElement.lastChild.previousSibling);
+// console.log(document.documentElement.lastChild.previousSibling);
+
+
+// console.log(document.body.parentElement);
+
+let result = document.getElementById('ulika');
+ulika.style.color = 'red'
+console.log(result);
