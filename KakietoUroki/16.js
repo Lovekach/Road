@@ -88,3 +88,63 @@
 
 // const body = document.documentElement.children;
 // console.log(body);
+
+// DOM 2
+
+// const div1 = document.getElementById('.div1');
+// console.log(div1);
+
+// const divs = document.querySelectorAll('.div');
+// console.log(divs);
+
+// setTimeout(() => {
+//     divs.forEach((div) => {
+//         div.style.fontSize = '30px'
+//     })
+// }, 3000);
+
+
+// const div2 = document.querySelectorAll('.diva');
+
+// setTimeout(() => {
+//     div2.forEach((div2) => {
+//         div2.style.color = 'red'
+//     })
+// }, 2000);
+
+// const heroDiv = document.querySelectorAll('.hero');
+
+// setTimeout(() => {
+//     heroDiv.forEach((div3) => {
+//         div3.style.opacity = .2;
+//     })
+// }, 4000);
+
+
+// const body = document.body;
+// const firstElement = body.firstChild;
+// console.log(firstElement);
+// console.log(firstElement.tagName);
+// console.log(firstElement.nodeName);
+
+
+// const header = document.querySelector('header');
+
+// console.log(header.outerHTML);
+
+// setTimeout(() => {
+//     header.innerHTML += '';
+// }, 2000); 
+
+// const body = document.body;
+// const firstElement = body.firstChild;
+
+// console.log(firstElement.nodeValue);
+// console.log(firstElement.data);
+
+
+// const link = document.querySelector('.a');
+// const input = document.querySelector('.input');
+
+// console.log(link.href);
+// console.log(input.value);
