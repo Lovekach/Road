@@ -56,3 +56,42 @@
     width: 170px;
     height: 64px;
 }
+
+.header-burger-menu {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .header {
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 950px) {
+    .header-nav {
+        display: none;
+    }
+
+    .header-logo-img {
+        display: none;
+    }
+
+    .header-burger-menu {
+        display: initial;
+    }
+
+    .header-logo-title {
+        font-size: 24px;
+        color: var(--color-graydark-64);
+    }
+
+    .header-button {
+        width: 124px;
+        height: 40px;
+        border-radius: 2px;
+        font-size: 18px;
+        font-family: var(--font-family-medium);
+    }
+}

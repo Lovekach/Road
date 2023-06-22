@@ -152,6 +152,7 @@
     border: none;
     background: transparent;
     padding: 16px 8px;
+    padding-right: 40px;
     outline: none;
 
 }
@@ -186,6 +187,7 @@
     outline: none;
     padding: 16px;
     color: var(--color-purpledark);
+    padding-right: 40px;
     
 
 }
