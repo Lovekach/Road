@@ -148,3 +148,41 @@
 
 // console.log(link.href);
 // console.log(input.value);
+
+
+
+// const div = document.getElementById('div1');
+
+// console.log(div.id);
+// console.log(div.getAttribute('rrr'));
+// console.log(div.hasAttribute('rrr'));
+// div.removeAttribute('rrr');
+
+// console.log(div.dataset.ageAge2);
+
+// const newDiv = document.createElement('div');
+// const newDivText = document.createTextNode('Какой то текст');
+
+// newDiv.prepend(newDivText);
+// // newDiv.innerHTML = 'Какой то текст';
+
+// // console.log(newDiv);
+
+// const body = document.body;
+
+// body.prepend(newDiv)
+
+// newDiv.className = 'divok'
+
+
+const newLink = document.createElement('a');
+const textLink = document.createTextNode('Наша ссылка');
+
+newLink.className = 'tag-link'
+newLink.prepend(textLink);
+
+const body = document.body;
+
+body.prepend(newLink)
+
+ 
