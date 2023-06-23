@@ -103,3 +103,47 @@ function hero(bullets, dragons){
   function opposite(number) {
     return -number;
   }
+
+  function checkage(age) {
+    if (age < 18) {
+      console.log('you are not allowed');
+    } else {
+      console.log('you are welcome');
+    }
+  }
+
+  checkage(17);
+
+
+  let user = 'Миша';
+  function changeUserName() {
+    user = 'Гриша';
+    console.log(user);
+  }
+
+  changeUserName();
+
+
+  function sum(a,b) {
+    return a + b;
+  }
+
+  let resul = sum(1,2);
+  console.log(resul);
+
+
+  function calc(a,b,operation) {
+    if (operation === 'add') {
+      return a + b
+    }
+    if (operation === 'multi') {
+      return a * b
+    }
+    if (operation === 'subtract') {
+      return a - b
+    }
+  }
+
+  calc(1,2, 'add')
+  calc(1,2, 'multi')
+  calc(1,2, 'subtract')
