@@ -175,14 +175,29 @@
 // newDiv.className = 'divok'
 
 
-const newLink = document.createElement('a');
-const textLink = document.createTextNode('Наша ссылка');
+// const newLink = document.createElement('a');
+// const textLink = document.createTextNode('Наша ссылка');
 
-newLink.className = 'tag-link'
-newLink.prepend(textLink);
+// newLink.className = 'tag-link'
+// newLink.prepend(textLink);
 
-const body = document.body;
+// const body = document.body;
 
-body.prepend(newLink)
+// body.prepend(newLink)
 
+const div = document.getElementById('divId')
+const wrapperItem = document.querySelector('.wrapper_item');
+
+// setTimeout(() => {
+//     div.className ="divClass3"; 
+// }, 2000); 
+
+setTimeout(() => {
+    // div.classList.add('cssClass'); // добавление css класса
+    // div.classList.remove('cssClass'); // удаление css класса
+    // div.classList.contains('cssClass'); // проверяет наличие класса(есть ли он или нет) css класса
+    // div.classList.toggle('cssClass'); // удаляет класс(если он есть) и добавляет класс(если его нету) 
+}, 2000);
+
+console.log(div.classList);
  
