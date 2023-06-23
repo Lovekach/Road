@@ -1,0 +1,55 @@
+.wrapper {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    background: black;
+}
+
+.wrapper_item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper_item:nth-child(1) {
+    background: orange;
+    cursor: pointer;
+}
+
+
+.wrapper_item:nth-child(2) {
+    background: green;
+    cursor: pointer;
+}
+
+
+.wrapper_item:nth-child(3) {
+    background: yellow;
+    cursor: pointer;
+}
+
+
+.wrapper_item:nth-child(4) {
+    background: blue;
+    cursor: pointer;
+}
+
+
+.wrapper_item:nth-child(5) {
+    background: brown;
+    cursor: pointer;
+}
+
+
+.wrapper_item:nth-child(6) {
+    background: pink;
+    cursor: pointer;
+}
+
+.active {
+    background: red !important;
+}

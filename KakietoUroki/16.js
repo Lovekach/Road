@@ -185,19 +185,78 @@
 
 // body.prepend(newLink)
 
-const div = document.getElementById('divId')
-const wrapperItem = document.querySelector('.wrapper_item');
+// const div = document.getElementById('divId')
+// const wrapperItem = document.querySelector('.wrapper_item');
+
+// // setTimeout(() => {
+// //     div.className ="divClass3"; 
+// // }, 2000); 
 
 // setTimeout(() => {
-//     div.className ="divClass3"; 
-// }, 2000); 
+//     // div.classList.add('cssClass'); // добавление css класса
+//     // div.classList.remove('cssClass'); // удаление css класса
+//     // div.classList.contains('cssClass'); // проверяет наличие класса(есть ли он или нет) css класса
+//     // div.classList.toggle('cssClass'); // удаляет класс(если он есть) и добавляет класс(если его нету) 
+// }, 2000);
 
-setTimeout(() => {
-    // div.classList.add('cssClass'); // добавление css класса
-    // div.classList.remove('cssClass'); // удаление css класса
-    // div.classList.contains('cssClass'); // проверяет наличие класса(есть ли он или нет) css класса
-    // div.classList.toggle('cssClass'); // удаляет класс(если он есть) и добавляет класс(если его нету) 
-}, 2000);
+// console.log(div.classList);
 
-console.log(div.classList);
- 
+
+
+
+// const wrapper = document.querySelector('.wrapper');
+
+// console.log(wrapper.offsetLeft);
+
+
+
+
+
+const wrapper = document.querySelector('.wrapper');
+const wrapperItem = document.querySelector('.wrapper_item');
+
+const google = document.querySelector('a')
+
+// const printHello = () => {
+//     alert('Hello');
+// };
+
+// const printHello2 = () => {
+//     alert('Hello2');
+// };
+
+
+// const printWrapper = (event) => {
+//     alert("Wrapper");
+// }
+
+
+// const printWrapperItem = (event) => {
+//     event.stopPropagation()
+//     alert('WrapperItem');
+// }
+
+
+const toggleActiveItem = (event) => {
+    event.target.classList.toggle('active')
+    // console.log('event.target',event.target);
+    // console.log('event.currentTarget',event.currentTarget);
+};
+
+const privetLink = (event) => {
+    event.preventDefault();
+    console.log(event);
+}
+
+// wrapperItem.onclick = printHello;
+
+// wrapperItem.addEventListener('click', printHello);
+// wrapperItem.removeEventListener('click', printHello2);
+
+
+// wrapper.addEventListener('click', printWrapper);
+// wrapperItem.addEventListener('click', printWrapperItem);
+
+
+wrapper.addEventListener('click', toggleActiveItem);
+google.addEventListener('click', privetLink);
