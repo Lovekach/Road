@@ -115,6 +115,15 @@
     height: 82px;
 }
 
+.main-background-wave {
+    display: none;
+    opacity: .4;
+    position: absolute;
+    width: 100%;
+    z-index: -3;
+
+}
+
 .main-background-rectangle,
 .main-background-dots {
     position: absolute;
@@ -153,6 +162,11 @@
     .main-text-fine::after {
         height: 47%;
     }
+
+    .main-grid {
+        width: 70vw;
+        grid-gap: 3vw;
+    }
 }
 
 @media (max-width: 950px) {
@@ -162,7 +176,24 @@
     }
 }
 
+@media (max-width : 700px) {
+    .main-grid {
+        width: 120vw;
+    
+    }
+}
+
 @media (max-width: 500px) {
+
+    .main {
+        overflow: hidden;
+    }
+
+    .main-background-wave {
+        display: initial;
+        top: -150px;
+    }
+
     .main-text-title {
         display: flex;
         flex-direction: column;
@@ -187,6 +218,11 @@
 
     .main-background-dots {
         width: 25vw;
+    }
+
+    .main-grid-text1,
+    .main-grid-text2 {
+        display: none;
     }
 
     .main-button {

@@ -212,10 +212,10 @@
 
 
 
-const wrapper = document.querySelector('.wrapper');
-const wrapperItem = document.querySelector('.wrapper_item');
+// const wrapper = document.querySelector('.wrapper');
+// const wrapperItem = document.querySelector('.wrapper_item');
 
-const google = document.querySelector('a')
+// const google = document.querySelector('a')
 
 // const printHello = () => {
 //     alert('Hello');
@@ -237,26 +237,114 @@ const google = document.querySelector('a')
 // }
 
 
-const toggleActiveItem = (event) => {
-    event.target.classList.toggle('active')
-    // console.log('event.target',event.target);
-    // console.log('event.currentTarget',event.currentTarget);
-};
+// const toggleActiveItem = (event) => {
+//     event.target.classList.toggle('active')
+//     // console.log('event.target',event.target);
+//     // console.log('event.currentTarget',event.currentTarget);
+// };
 
-const privetLink = (event) => {
-    event.preventDefault();
-    console.log(event);
-}
+// const privetLink = (event) => {
+//     event.preventDefault();
+//     console.log(event);
+// }
 
-// wrapperItem.onclick = printHello;
+// // wrapperItem.onclick = printHello;
 
-// wrapperItem.addEventListener('click', printHello);
-// wrapperItem.removeEventListener('click', printHello2);
-
-
-// wrapper.addEventListener('click', printWrapper);
-// wrapperItem.addEventListener('click', printWrapperItem);
+// // wrapperItem.addEventListener('click', printHello);
+// // wrapperItem.removeEventListener('click', printHello2);
 
 
-wrapper.addEventListener('click', toggleActiveItem);
-google.addEventListener('click', privetLink);
+// // wrapper.addEventListener('click', printWrapper);
+// // wrapperItem.addEventListener('click', printWrapperItem);
+
+
+// wrapper.addEventListener('click', toggleActiveItem);
+// google.addEventListener('click', privetLink);
+
+
+
+
+
+
+const button = document.querySelector('button');
+
+// button.addEventListener('click', clickHandler);
+
+// let i = 0;
+
+// function clickHandler() {
+//     i++;
+
+//     console.log('click');
+
+//     switch(i) {
+//         case 1:
+//             button.style.background = 'red';
+//             break;
+//         case 2:
+//             button.style.background = 'pink';
+//             break;
+//         case 3:
+//             button.style.background = 'green';
+//             break;
+//         case 4:
+//             button.style.background = 'blue';
+//             break;
+//         case 5:
+//             button.style.background = 'yellow';
+//             button.removeEventListener('click', clickHandler)
+//             break;
+//     }
+
+// }
+
+
+// const input = document.querySelector('[name="my_input"]');
+
+// input.addEventListener('input', function_name);
+
+// let prevValue = input.value;
+// console.log(prevValue);
+// console.dir(input);
+
+
+// function function_name(event) {
+
+//     const userData = event.target.value;
+
+//     if (userData.includes === ('(') || userData.includes === (')')) {
+//         input.value = prevValue;
+//         return;
+
+//     }
+
+//     input.value = userData;
+//     prevValue = userData;
+// }
+
+
+// document.addEventListener('scroll', (event) => {
+//     console.log(event.target.scrollingElement.scrollTop);
+// });
+
+
+
+// document.addEventListener('keydown', (event) => {
+//     console.log(event);
+// });
+
+
+// window.addEventListener('resize', (event) => {
+//     console.log(event);
+// });
+
+
+
+// button.addEventListener('mouseenter', (event) => {
+//     console.log(event);
+// });
+
+
+// button.addEventListener('mouseleave', (event) => {
+//     console.log(event);
+// });
