@@ -7,7 +7,7 @@ const cart = [{
     price: 10,
     count: 2,
 }, {
-    name: 'МОлоко',
+    name: 'Мoлоко',
     price: 50,
     count: 1,
 }];
